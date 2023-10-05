@@ -1,3 +1,5 @@
+const { signal } = new AbortController()
+
 const repo = "https://api.github.com/repos/noter-apps/noter";
 
 async function getGithubStars() {
@@ -8,6 +10,7 @@ async function getGithubStars() {
   }
 
   const noterRepo = await fetch(repo, {
+    signal,
     headers: {
       Authorization: `token ${gh_token}`,
     },
