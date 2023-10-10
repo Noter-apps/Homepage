@@ -57,9 +57,6 @@ export default function RootLayout({
 					<Navbar />
 				</header>
 				<main>{children}</main>
-				<footer className='bg-gray-100 m-0'>
-					<p>Footer</p>
-				</footer>
 			</body>
 		</html>
 	);

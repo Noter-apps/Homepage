@@ -20,5 +20,4 @@ body {
     rgb(var(--background-start-rgb));
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }

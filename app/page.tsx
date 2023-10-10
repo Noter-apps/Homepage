@@ -36,7 +36,8 @@ function Card({ children }: { children: ReactNode }) {
 
 function DownloadButton() {
 	return (
-		<button className='flex items-center justify-center hover:bg-gray-800 gap-2 bg-black  text-white font-bold py-4 rounded'>
+		<a href='/download'>
+		<button className='flex items-center justify-center w-full hover:bg-gray-800 gap-2 bg-black  text-white font-bold py-4 rounded'>
 			Download for free!
 			<svg width='16' height='16' viewBox='0 0 24 24'>
 				<path
@@ -46,6 +47,7 @@ function DownloadButton() {
 				></path>
 			</svg>
 		</button>
+		</a>
 	);
 }
 
@@ -91,9 +93,9 @@ function MainLogo() {
 			<div className='flex flex-col justify-between'>
 				<h1 className='text-6xl md:text-8xl font-bold'>
 					Markdown <br />
-					made
+					Made
 					<br />
-					fun!
+					Fun!
 				</h1>
 				<DownloadButton />
 			</div>
@@ -135,7 +137,7 @@ function Wave() {
 
 function BestFeatures() {
 	return (
-		<div className='bg-red-500'>
+		<div className=''>
 			<h2 className='text-3xl font-bold flex justify-center'>
 				The best from Word{' '}
 				<strong className='text-green-600 px-3'>AND</strong>
@@ -143,6 +145,7 @@ function BestFeatures() {
 			</h2>
 			<WordIcon />
 			{/* <NotepadIcon /> */}
+			<p className='text-lg text-center'>Noter combines the rich text editor expirience of apps like Word or Notion, but without the proprietary and unreadable file formats they use to store data.</p>
 		</div>
 	);
 }

@@ -68,7 +68,7 @@ async function GitHubButton() {
 
 function DownloadButton() {
 	return (
-		<a className='flex items-center'>
+		<a className='flex items-center' href='/download'>
 			<button className='flex items-center gap-1 border bg-black hover:bg-gray-800 hover:outline-gray-200 hover:outline-2 text-white p-2 rounded-lg'>
 				<p>Download</p>
 				<svg width='16' height='16' viewBox='0 0 24 24'>
