@@ -44,16 +44,16 @@ function NavbarIcon({
 
 function Footer() {
 	return (
-		<div className='flex flex-col lg:flex-row gap-8 justify-center p-4 bg-gray-100'>
+		<div className='flex flex-col lg:flex-row gap-4 items-center justify-center py-4 bg-gray-100'>
 			<div className='flex flex-col'>
-				<p>© 2023 Ondřej Hána</p>
 				<p>Tato stránka slouží jako zápočtový projekt pro předmět TNPW1.</p>
+				<p>©Ondřej Hána 2023</p>
 			</div>
 			<div>
-				<form className='flex flex-col gap-2'>
-					<input type='text' placeholder='Email' className='p-1 rounded'/>
-					<input type='textarea' placeholder='Message' className='p-1 rounded'/>
-					<button className='hover:bg-white rounded'>Send</button>
+				<form>
+					<input type='text' placeholder='Email' />
+					<input type='text' placeholder='Message' />
+					<button>Send</button>
 				</form>
 			</div>
 		</div>	
