@@ -17,17 +17,32 @@ function NoterLogo() {
 
 function PageNavigation() {
 	return (
-		<div className='flex gap-2'>
-			<button className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'>
-				Product
-			</button>
-			<button className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'>
-				Blog
-			</button>
-			<button className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'>
-				Gallery
-			</button>
-		</div>
+		<ul className='flex gap-2'>
+			<li>
+				<a
+					href='/about'
+					className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'
+				>
+					About
+				</a>
+			</li>
+			<li>
+				<a
+					href='/blog'
+					className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'
+				>
+					Blog
+				</a>
+			</li>
+			<li>
+				<a
+					href='/gallery'
+					className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'
+				>
+					Gallery
+				</a>
+			</li>
+		</ul>
 	);
 }
 

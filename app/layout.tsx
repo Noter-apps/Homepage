@@ -44,19 +44,32 @@ function NavbarIcon({
 
 function Footer() {
 	return (
-		<div className='flex flex-col lg:flex-row gap-8 justify-center p-4 bg-gray-100'>
+		<div className='flex flex-col lg:flex-row gap-16 justify-center p-4 bg-gray-100 dark:bg-gray-900'>
 			<div className='flex flex-col'>
 				<p>© 2023 Ondřej Hána</p>
-				<p>Tato stránka slouží jako zápočtový projekt pro předmět TNPW1.</p>
+				<p>
+					Tato stránka slouží jako zápočtový projekt pro předmět
+					TNPW1.
+				</p>
 			</div>
 			<div>
 				<form className='flex flex-col gap-2'>
-					<input type='text' placeholder='Email' className='p-1 rounded'/>
-					<input type='textarea' placeholder='Message' className='p-1 rounded'/>
-					<button className='hover:bg-white rounded'>Send</button>
+					<input
+						type='text'
+						placeholder='Email'
+						className='p-1 rounded dark:text-black'
+					/>
+					<input
+						type='textarea'
+						placeholder='Message'
+						className='p-1 rounded dark:text-black'
+					/>
+					<button className='hover:bg-white dark:hover:bg-gray-800 rounded p-1'>
+						Send
+					</button>
 				</form>
 			</div>
-		</div>	
+		</div>
 	);
 }
 
@@ -74,7 +87,9 @@ export default function RootLayout({
 				<header>
 					<Navbar />
 				</header>
-				<main className='py-12'>{children}</main>
+				<main className='py-12 flex flex-col items-center justify-center gap-32'>
+					{children}
+				</main>
 				<footer>
 					<Footer />
 				</footer>

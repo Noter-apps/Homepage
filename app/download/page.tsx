@@ -3,13 +3,13 @@ import croc from '@/public/croc.png';
 
 function MainLogo() {
 	return (
-		<div className='flex flex-col md:flex-row gap-4 justify-center'>
+		<div className='flex flex-col lg:flex-row gap-4 justify-center'>
 			<div className='flex flex-col justify-between'>
 				<h1 className='text-6xl md:text-8xl font-bold'>
 					Download <br />
 					For
 					<br />
-					<strong className='text-green-600'>Free</strong>!
+					<strong className='text-green-500'>Free</strong>!
 				</h1>
 			</div>
 			<Image src={croc} width={600} height={600} alt='croc'></Image>
@@ -20,7 +20,7 @@ function MainLogo() {
 function MacOSButton() {
 	return (
 		<a className='w-full'>
-			<button className='flex w-full items-center justify-center gap-2 bg-gradient-to-tl from-orange-500 to-red-600 hover:from-red-400 hover:to-orange-500 hover:shadow-lg text-white font-bold py-4 md:px-16 rounded-lg'>
+			<button className='flex w-full items-center justify-center gap-2 bg-gradient-to-tl from-orange-500 to-red-600 hover:from-red-600 hover:to-orange-500 hover:shadow-lg text-white font-bold py-4 md:px-16 rounded-lg'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					viewBox='0 0 384 512'
@@ -106,15 +106,15 @@ function CompatibilityTable() {
 			</thead>
 			<tbody>
 				<tr>
-					<td className='text-blue-600'>Windows</td>
+					<td className='text-blue-500 font-bold'>Windows</td>
 					<td>10</td>
 				</tr>
 				<tr>
-					<td className='text-orange-500'>MacOS</td>
+					<td className='text-orange-500 font-bold'>MacOS</td>
 					<td>10.13+</td>
 				</tr>
 				<tr>
-					<td className='text-red-500'>Linux</td>
+					<td className='text-red-500 font-bold'>Linux</td>
 					<td>Ubuntu 20.04+</td>
 				</tr>
 			</tbody>
@@ -124,12 +124,12 @@ function CompatibilityTable() {
 
 function Download() {
 	return (
-		<div className='flex flex-col items-center justify-center gap-24 px-4'>
+		<>
 			<MainLogo />
 			<DownloadSection />
 			<h2 className='text-4xl font-bold'>Compatibility</h2>
 			<CompatibilityTable />
-		</div>
+		</>
 	);
 }
 
