@@ -14,34 +14,6 @@ export const metadata: Metadata = {
 	},
 };
 
-function NavbarIcon({
-	showMenu,
-	setShowMenu,
-}: {
-	showMenu: boolean;
-	setShowMenu: (show: boolean) => void;
-}) {
-	return (
-		<button onClick={() => setShowMenu(!showMenu)}>
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				fill='none'
-				viewBox='0 0 24 24'
-				strokeWidth='2'
-				stroke='currentColor'
-				aria-hidden='true'
-				className='h-6 w-6'
-			>
-				<path
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					d='M4 6h16M4 12h16M4 18h16'
-				></path>
-			</svg>
-		</button>
-	);
-}
-
 function Footer() {
 	return (
 		<div className='flex flex-col lg:flex-row gap-16 justify-center p-4 bg-gray-100 dark:bg-gray-900'>
@@ -87,7 +59,7 @@ export default function RootLayout({
 				<header>
 					<Navbar />
 				</header>
-				<main className='py-12 flex flex-col items-center justify-center gap-32'>
+				<main className='py-12 flex flex-col items-center justify-center gap-8 lg:gap-24'>
 					{children}
 				</main>
 				<footer>

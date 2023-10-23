@@ -3,7 +3,14 @@ import croc from '@/public/croc.png';
 
 function MainLogo() {
 	return (
-		<div className='flex flex-col lg:flex-row gap-4 justify-center'>
+		<div className='flex flex-col  lg:flex-row-reverse gap-4 justify-center'>
+			<Image
+				src={croc}
+				width={480}
+				height={480}
+				alt='croc'
+				className='object-contain object-top'
+			></Image>
 			<div className='flex flex-col justify-between'>
 				<h1 className='text-6xl md:text-8xl font-bold'>
 					Download <br />
@@ -11,8 +18,13 @@ function MainLogo() {
 					<br />
 					<strong className='text-green-500'>Free</strong>!
 				</h1>
+				<div className='flex flex-col gap-2 pt-4'>
+					<WindowsButton />
+					<MacOSButton />
+					<AppImageButton />
+					<DebianButton />
+				</div>
 			</div>
-			<Image src={croc} width={600} height={600} alt='croc'></Image>
 		</div>
 	);
 }
@@ -84,17 +96,6 @@ function DebianButton() {
 	);
 }
 
-function DownloadSection() {
-	return (
-		<div className='w-full lg:max-w-5xl px-6 grid grid-cols-1 md:grid-cols-2 gap-4'>
-			<WindowsButton />
-			<MacOSButton />
-			<AppImageButton />
-			<DebianButton />
-		</div>
-	);
-}
-
 function CompatibilityTable() {
 	return (
 		<table className='table-auto text-lg w-full max-w-2xl'>
@@ -126,7 +127,6 @@ function Download() {
 	return (
 		<>
 			<MainLogo />
-			<DownloadSection />
 			<h2 className='text-4xl font-bold'>Compatibility</h2>
 			<CompatibilityTable />
 		</>

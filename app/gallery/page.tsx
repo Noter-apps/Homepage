@@ -22,14 +22,14 @@ function Gallery() {
 				</div>
 				<Image
 					src={croc}
-					width={600}
-					height={600}
+					width={480}
+					height={480}
 					alt='author profile photo'
-					className='rounded-lg'
+					className='rounded-lg object-contain object-top'
 				></Image>
 			</div>
 
-			<div>
+			<div className='flex justify-center max-w-screen-2xl'>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-8'>
 					<Image
 						src={Screenshot1}

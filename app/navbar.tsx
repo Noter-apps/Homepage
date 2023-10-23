@@ -28,10 +28,10 @@ function PageNavigation() {
 			</li>
 			<li>
 				<a
-					href='/blog'
+					href='/product'
 					className='p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md'
 				>
-					Blog
+					Product
 				</a>
 			</li>
 			<li>

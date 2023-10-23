@@ -16,10 +16,10 @@ function About() {
 				</div>
 				<Image
 					src={profile_photo}
-					width={600}
-					height={600}
+					width={480}
+					height={480}
 					alt='author profile photo'
-					className='rounded-lg'
+					className='rounded-lg object-contain object-top'
 				></Image>
 			</div>
 		</>

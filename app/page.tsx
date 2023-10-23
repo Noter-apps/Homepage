@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import croc from '@/public/croc.png';
 import linux from '@/public/linux.svg';
-import appPreview from '@/public/Screenshot2.png';
+import screenshot2 from '@/public/Screenshot2.png';
+import screenshot4 from '@/public/gallery/Screenshot4.png';
+import screenshot6 from '@/public/gallery/Screenshot6.png';
 import notepadIcon from '@/public/Notepad_Win11.svg';
 
 function DownloadButton() {
@@ -74,7 +76,14 @@ function Iconsmash() {
 
 function MainLogo() {
 	return (
-		<div className='flex flex-col lg:flex-row gap-4 justify-center px-4'>
+		<div className='flex flex-col lg:flex-row-reverse gap-4 justify-center px-4'>
+			<Image
+				src={croc}
+				width={480}
+				height={480}
+				alt='croc'
+				className='object-contain object-top'
+			></Image>
 			<div className='flex flex-col justify-between'>
 				<h1 className='text-6xl md:text-8xl font-bold'>
 					Markdown <br />
@@ -84,7 +93,6 @@ function MainLogo() {
 				</h1>
 				<DownloadButton />
 			</div>
-			<Image src={croc} width={600} height={600} alt='croc'></Image>
 		</div>
 	);
 }
@@ -107,10 +115,58 @@ function Wave() {
 
 function AppPreview() {
 	return (
-		<div>
-			<div className='pt-4 px-4 md:px-8 md:pt-32 bg-gradient-to-t from-green-300 from-20% '>
-				<div className='shadow-lg'>
-					<Image src={appPreview} alt='app preview' />
+		<div className='w-full'>
+			<div className='flex justify-center w-full pt-4 px-4 md:px-8 md:pt-32 bg-gradient-to-t from-green-300 from-20%'>
+				<div className='grid justify-center gap-4 grid-cols-1 lg:grid-cols-3 grid-rows-3 max-w-screen-2xl '>
+					<div className='flex flex-col row-span-2 bg-white dark:bg-gray-900 rounded-lg overflow-hidden border border-gray-100 dark:border-gray-800 '>
+						<h3 className='font-bold text-2xl p-4'>
+							All notes are visible in sidebar
+						</h3>
+						<div className='overflow-hidden w-full max-w-[328px] lg:max-w-[440px] rounded-tr '>
+							<Image
+								src={screenshot2}
+								alt='sidebar preview'
+								className='object-cover w-[1200px] h-[800px] lg:w-[1920px] lg:h-[1080px] object-left-top overflow-hidden'
+							/>
+						</div>
+					</div>
+					<div className='flex flex-col col-span-2 row-span-1 border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-lg overflow-hidden '>
+						<h3 className='font-bold text-2xl p-4'>
+							Find all options in top menu
+						</h3>
+						<div className='overflow-hidden max-w-[840px] max-h-96 mr-0 ml-auto rounded-tl '>
+							<Image
+								src={screenshot4}
+								alt='sidebar preview'
+								className='object-cover w-[1920px] h-[1080px] object-top overflow-hidden'
+							/>
+						</div>
+					</div>
+					<div className='flex flex-col col-span-2 row-span-1 border border-gray-100 dark:border-gray-800 bg-white   dark:bg-gray-900 rounded-lg overflow-hidden  '>
+						<h3 className='font-bold text-2xl p-4'>
+							Search with one shortcut
+						</h3>
+						<div className='overflow-hidden max-w-[840px] max-h-96 rounded-tr flex items-center'>
+							<Image
+								src={screenshot6}
+								alt='search preview'
+								className='object-cover object-center w-[1920px] h-[1080px] overflow-hidden'
+							/>
+						</div>
+					</div>
+					<div className='flex flex-col lg:flex-row justify-between col-span-full rounded-lg overflow-hidden bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 '>
+						<h3 className='p-4 font-bold text-2xl  '>
+							Markdown syntax is automatically converted into rich
+							text
+						</h3>
+						<div className='flex items-end overflow-hidden min-w-[1290px] max-h-[580px]'>
+							<Image
+								src={screenshot2}
+								alt='search preview'
+								className='object-cover  object-right-bottom w-[1920px] h-[1080px] overflow-hidden'
+							/>
+						</div>
+					</div>
 				</div>
 			</div>
 			<Wave />
@@ -169,7 +225,7 @@ function PlatformIcons() {
 
 function Cards() {
 	return (
-		<div className='flex flex-col gap-16 px-8 lg:px-32 pt-32 w-full'>
+		<div className='flex flex-col gap-16 px-8 lg:px-32 pt-32 w-full max-w-screen-2xl'>
 			<div className='flex flex-col md:flex-row gap-4 items-center justify-center p-2 bg-gray-100 dark:bg-gray-900 rounded-lg max-w-full md:max-w-2xl'>
 				<div className='w-32 h-32 flex items-center justify-center'>
 					<svg
