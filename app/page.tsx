@@ -288,10 +288,10 @@ function Cards() {
 						Fully open source
 					</h3>
 					<p className='text-justify'>
-						You can't trust anyone today, including me. So I do
-						everything I can to make sure you don't have to! Noter
-						is fully open source and you can check out the code on
-						GitHub.
+						You can&apos;t trust anyone today, including me. So I do
+						everything I can to make sure you don&apos;t have to!
+						Noter is fully open source and you can check out the
+						code on GitHub.
 					</p>
 				</div>
 			</div>
