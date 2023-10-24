@@ -117,54 +117,60 @@ function AppPreview() {
 	return (
 		<div className='w-full'>
 			<div className='flex justify-center w-full pt-4 px-4 md:px-8 md:pt-32 bg-gradient-to-t from-green-300 from-20%'>
-				<div className='grid justify-center gap-4 grid-cols-1 lg:grid-cols-3 grid-rows-3 max-w-screen-2xl '>
-					<div className='flex flex-col row-span-2 bg-white dark:bg-gray-900 rounded-lg overflow-hidden border border-gray-100 dark:border-gray-800 '>
-						<h3 className='font-bold text-2xl p-4'>
-							All notes are visible in sidebar
-						</h3>
-						<div className='overflow-hidden w-full max-w-[328px] lg:max-w-[440px] rounded-tr '>
-							<Image
-								src={screenshot2}
-								alt='sidebar preview'
-								className='object-cover w-[1200px] h-[800px] lg:w-[1920px] lg:h-[1080px] object-left-top overflow-hidden'
-							/>
+				<div className='grid grid-cols-1 lg:grid-cols-3 columns-md gap-2 w-full max-w-screen-2xl'>
+					<div className='row-span-1 lg:row-span-2 flex justify-center'>
+						<div className='h-full lg:w-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
+							<h3 className='font-bold text-2xl p-4'>
+								All notes are visible in sidebar
+							</h3>
+							<div className='overflow-hidden w-full max-w-[352px] h-96 lg:h-full rounded-r'>
+								<Image
+									src={screenshot2}
+									alt='sidebar preview'
+									className='object-cover object-left w-[1280px] h-[860px]'
+								/>
+							</div>
 						</div>
 					</div>
-					<div className='flex flex-col col-span-2 row-span-1 border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 rounded-lg overflow-hidden '>
+					<div className='row-span-1 lg:col-span-2 h-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
 						<h3 className='font-bold text-2xl p-4'>
-							Find all options in top menu
+							All options are avaiable in top menu
 						</h3>
-						<div className='overflow-hidden max-w-[840px] max-h-96 mr-0 ml-auto rounded-tl '>
-							<Image
-								src={screenshot4}
-								alt='sidebar preview'
-								className='object-cover w-[1920px] h-[1080px] object-top overflow-hidden'
-							/>
+						<div className='overflow-hidden '>
+							<div className='w-[672px] h-96 '>
+								<Image
+									src={screenshot4}
+									alt='top menu preview'
+									className=' object-cover w-[1280px] h-[860px]'
+								/>
+							</div>
 						</div>
 					</div>
-					<div className='flex flex-col col-span-2 row-span-1 border border-gray-100 dark:border-gray-800 bg-white   dark:bg-gray-900 rounded-lg overflow-hidden  '>
+					<div className='row-span-1 lg:col-span-2 h-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
 						<h3 className='font-bold text-2xl p-4'>
 							Search with one shortcut
 						</h3>
-						<div className='overflow-hidden max-w-[840px] max-h-96 rounded-tr flex items-center'>
+						<div className='flex items-center max-w-2xl h-96 ml-auto mr-0 overflow-hidden rounded-l-lg'>
 							<Image
 								src={screenshot6}
 								alt='search preview'
-								className='object-cover object-center w-[1920px] h-[1080px] overflow-hidden'
+								className='object-cover w-[800px] h-[600px] sm:w-[1280px] sm:h-[860px] lg:w-[1920px] lg:h-[1080px]'
 							/>
 						</div>
 					</div>
-					<div className='flex flex-col lg:flex-row justify-between col-span-full rounded-lg overflow-hidden bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 '>
-						<h3 className='p-4 font-bold text-2xl  '>
+					<div className='row-span-1 lg:col-span-3 flex flex-col lg:flex-row  h-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
+						<h3 className='p-4 font-bold text-2xl '>
 							Markdown syntax is automatically converted into rich
 							text
 						</h3>
-						<div className='flex items-end overflow-hidden min-w-[1290px] max-h-[580px]'>
-							<Image
-								src={screenshot2}
-								alt='search preview'
-								className='object-cover  object-right-bottom w-[1920px] h-[1080px] overflow-hidden'
-							/>
+						<div className='overflow-hidden w-full'>
+							<div className='w-[1024px] h-96'>
+								<Image
+									src={screenshot2}
+									alt='top menu preview'
+									className='object-cover object-right w-[1280px] h-[860px]'
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

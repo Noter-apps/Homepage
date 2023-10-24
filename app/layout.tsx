@@ -24,23 +24,7 @@ function Footer() {
 					TNPW1.
 				</p>
 			</div>
-			<div>
-				<form className='flex flex-col gap-2'>
-					<input
-						type='text'
-						placeholder='Email'
-						className='p-1 rounded dark:text-black'
-					/>
-					<input
-						type='textarea'
-						placeholder='Message'
-						className='p-1 rounded dark:text-black'
-					/>
-					<button className='hover:bg-white dark:hover:bg-gray-800 rounded p-1'>
-						Send
-					</button>
-				</form>
-			</div>
+			<div></div>
 		</div>
 	);
 }
