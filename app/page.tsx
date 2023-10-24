@@ -118,12 +118,11 @@ function AppPreview() {
 		<div className='w-full'>
 			<div className='flex justify-center w-full pt-4 px-4 md:px-8 md:pt-32 bg-gradient-to-t from-green-300 from-20%'>
 				<div className='grid grid-cols-1 lg:grid-cols-3 columns-md gap-2 w-full max-w-screen-2xl'>
-					<div className='row-span-1 lg:row-span-2 flex justify-center'>
-						<div className='h-full lg:w-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
+						<div className='row-span-1 lg:row-span-2 h-full lg:w-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
 							<h3 className='font-bold text-2xl p-4'>
 								All notes are visible in sidebar
 							</h3>
-							<div className='overflow-hidden w-full max-w-[352px] h-96 lg:h-full rounded-r'>
+							<div className='overflow-hidden w-full max-w-[352px] h-96 lg:h-full rounded-tr'>
 								<Image
 									src={screenshot2}
 									alt='sidebar preview'
@@ -131,7 +130,6 @@ function AppPreview() {
 								/>
 							</div>
 						</div>
-					</div>
 					<div className='row-span-1 lg:col-span-2 h-full bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg overflow-hidden'>
 						<h3 className='font-bold text-2xl p-4'>
 							All options are avaiable in top menu
