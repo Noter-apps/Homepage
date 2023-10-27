@@ -8,8 +8,7 @@ import notepadIcon from '@/public/Notepad_Win11.svg';
 
 function DownloadButton() {
 	return (
-		<a href='/download'>
-			<button className='flex items-center justify-center w-full hover:bg-neutral-800 gap-2 bg-black text-white dark:bg-white dark:text-black dark:hover:bg-neutral-100 font-bold py-4 rounded'>
+		<a href='/download' className='flex items-center justify-center w-full hover:bg-neutral-800 gap-2 bg-black text-white dark:bg-white dark:text-black dark:hover:bg-neutral-100 font-bold py-4 rounded'>
 				Download for free!
 				<svg width='16' height='16' viewBox='0 0 24 24'>
 					<path
@@ -18,7 +17,6 @@ function DownloadButton() {
 						d='m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z'
 					></path>
 				</svg>
-			</button>
 		</a>
 	);
 }

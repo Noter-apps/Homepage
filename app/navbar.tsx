@@ -10,7 +10,7 @@ function NoterLogo() {
 				height={36}
 				alt='Noter logo'
 			/>
-			<h1 className='text-2xl font-bold'>Noter</h1>
+			<p className='text-2xl font-bold'>Noter</p>
 		</div>
 	);
 }
@@ -83,8 +83,7 @@ async function GitHubButton() {
 
 function DownloadButton() {
 	return (
-		<a className='flex items-center' href='/download'>
-			<button className='flex items-center gap-1 border bg-black hover:bg-neutral-800 hover:outline-gray-200 hover:outline-2 text-white p-2 rounded-lg'>
+		<a className='flex items-center gap-1 border bg-black hover:bg-neutral-800 hover:outline-gray-200 hover:outline-2 text-white p-2 rounded-lg' href='/download'>
 				<p>Download</p>
 				<svg width='16' height='16' viewBox='0 0 24 24'>
 					<path
@@ -93,7 +92,6 @@ function DownloadButton() {
 						d='m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z'
 					></path>
 				</svg>
-			</button>
 		</a>
 	);
 }
