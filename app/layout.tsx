@@ -43,7 +43,7 @@ export default function RootLayout({
 				<header>
 					<Navbar />
 				</header>
-				<main className='py-12 flex flex-col items-center justify-center gap-8 lg:gap-24'>
+				<main className='py-12 flex flex-col items-center  gap-8 lg:gap-24'>
 					{children}
 				</main>
 				<footer>

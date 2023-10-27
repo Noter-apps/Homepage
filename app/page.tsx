@@ -184,10 +184,10 @@ function BestFeatures() {
 			<Iconsmash />
 			<h2 className='text-xl md:text-3xl font-bold flex justify-center py-4'>
 				The best from Word
-				<strong className='text-green-500 px-1 md:px-3'>AND</strong>
+				<strong className='text-green-500 px-1'>AND</strong>
 				Notepad
 			</h2>
-			<p className='text-lg text-justify'>
+			<p className='text-lg md:text-justify'>
 				Noter combines the rich text editor expirience of apps like Word
 				or Notion, but without the proprietary and unreadable file
 				formats they use to store data.
@@ -246,7 +246,7 @@ function Cards() {
 					<h3 className='font-bold text-2xl mx-auto md:mx-0'>
 						All your notes under your control!
 					</h3>
-					<p className='text-justify'>
+					<p className='text-justify pr-4'>
 						Noter saves all your notes in Markdown. A simple and
 						human readable plain text file format so you can access
 						them anytime, anywhere.
@@ -269,7 +269,7 @@ function Cards() {
 					<h3 className='font-bold text-2xl mx-auto md:mx-0'>
 						Find everything with ease!
 					</h3>
-					<p className='text-justify'>
+					<p className='text-justify pr-4'>
 						Noter has a powerful full text search engine that allows
 						you to find anything you need in instant.
 					</p>
@@ -291,7 +291,7 @@ function Cards() {
 					<h3 className='font-bold text-2xl mx-auto md:mx-0'>
 						Fully open source
 					</h3>
-					<p className='text-justify'>
+					<p className='text-justify pr-4'>
 						You can&apos;t trust anyone today, including me. So I do
 						everything I can to make sure you don&apos;t have to!
 						Noter is fully open source and you can check out the
@@ -315,7 +315,7 @@ function Cards() {
 					<h3 className='font-bold text-2xl mx-auto md:mx-0'>
 						Darkmode
 					</h3>
-					<p className='text-justify'>
+					<p className='text-justify pr-4'>
 						Noter has a beautiful darkmode that is easy on the eyes
 						and saves battery life.
 					</p>
@@ -327,7 +327,7 @@ function Cards() {
 					<h3 className='font-bold text-2xl mx-auto md:mx-0'>
 						Your notes, Everywhere!
 					</h3>
-					<p className='text-justify'>
+					<p className='text-justify pr-4'>
 						Noter is built to be platform agnostic. You can use it
 						on Windows, Mac or Linux.
 					</p>

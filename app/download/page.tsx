@@ -3,7 +3,7 @@ import croc from '@/public/croc.png';
 
 function MainLogo() {
 	return (
-		<div className='flex flex-col  lg:flex-row-reverse gap-4 justify-center'>
+		<div className='flex flex-col  lg:flex-row-reverse gap-4 justify-center px-4'>
 			<Image
 				src={croc}
 				width={480}
@@ -98,28 +98,30 @@ function DebianButton() {
 
 function CompatibilityTable() {
 	return (
-		<table className='table-auto text-lg w-full max-w-2xl'>
-			<thead className='bg-gray-100'>
-				<tr>
-					<th>Platform</th>
-					<th>Version</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td className='text-blue-500 font-bold'>Windows</td>
-					<td>10</td>
-				</tr>
-				<tr>
-					<td className='text-orange-500 font-bold'>MacOS</td>
-					<td>10.13+</td>
-				</tr>
-				<tr>
-					<td className='text-red-500 font-bold'>Linux</td>
-					<td>Ubuntu 20.04+</td>
-				</tr>
-			</tbody>
-		</table>
+		<div className='w-full max-w-2xl px-4'>
+			<table className='table-auto text-lg w-full'>
+				<thead className='bg-gray-100 dark:bg-gray-800'>
+					<tr>
+						<th>Platform</th>
+						<th>Version</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td className='text-blue-500 font-bold'>Windows</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td className='text-orange-500 font-bold'>MacOS</td>
+						<td>10.13+</td>
+					</tr>
+					<tr>
+						<td className='text-red-500 font-bold'>Linux</td>
+						<td>Ubuntu 20.04+</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	);
 }
 

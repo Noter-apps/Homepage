@@ -13,10 +13,9 @@ function MainLogo() {
 			></Image>
 			<div className='flex flex-col justify-between'>
 				<h1 className='text-6xl md:text-8xl font-bold'>
-					Markdown <br />
-					Made
-					<br />
-					<strong className='text-green-500'>Fun</strong>!
+					Adding more<br/>
+					By the<br/>
+					<strong className='text-green-500'>Day</strong>!
 				</h1>
 			</div>
 		</div>
