@@ -26,15 +26,17 @@ function About() {
 				<h2 className='text-4xl font-bold text-center pb-4'>
 					Contact me
 				</h2>
-				<form className='flex flex-col gap-4 w-full '>
+				<form className='flex flex-col gap-4 w-full'>
+					<label className='font-bold text-lg'>Email</label>
 					<input
 						type='text'
 						placeholder='Email'
-						className='p-1 rounded dark:text-black border border-gray-100'
+						className='p-1 rounded dark:text-black border border-gray-100 grow' 
 					/>
+					<label className='font-bold text-lg'>Message</label>
 					<textarea
 						placeholder='Message'
-						className='p-1 rounded dark:text-black border border-gray-100'
+						className='p-1 rounded dark:text-black border border-gray-100 grow'
 					></textarea>
 					<button className='hover:bg-gray-100 dark:hover:bg-gray-800 rounded p-2'>
 						Send
