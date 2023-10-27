@@ -27,17 +27,21 @@ function About() {
 					Contact me
 				</h2>
 				<form className='flex flex-col gap-4 w-full'>
-					<label className='font-bold text-lg'>Email</label>
-					<input
-						type='text'
-						placeholder='Email'
-						className='p-1 rounded dark:text-black border border-gray-100 grow' 
-					/>
-					<label className='font-bold text-lg'>Message</label>
-					<textarea
-						placeholder='Message'
-						className='p-1 rounded dark:text-black border border-gray-100 grow'
-					></textarea>
+					<label className='font-bold text-lg'>Email
+						<input
+							id='email'
+							name='email'
+							type='text'
+							placeholder='Email'
+							className='p-1 rounded dark:text-black border border-gray-100 grow'
+						/>
+					</label>
+					<label className='font-bold text-lg'>Message
+						<textarea
+							placeholder='Message'
+							className='p-1 rounded dark:text-black border border-gray-100 grow'
+						></textarea>
+					</label>
 					<button className='hover:bg-gray-100 dark:hover:bg-gray-800 rounded p-2'>
 						Send
 					</button>
