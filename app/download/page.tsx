@@ -16,7 +16,7 @@ function MainLogo() {
 					Download <br />
 					For
 					<br />
-					<strong className='text-green-500'>Free</strong>!
+					<strong className='text-green-600'>Free</strong>!
 				</h1>
 				<div className='flex flex-col gap-2 pt-4'>
 					<WindowsButton />

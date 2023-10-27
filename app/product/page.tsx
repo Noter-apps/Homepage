@@ -15,7 +15,7 @@ function MainLogo() {
 				<h1 className='text-6xl md:text-8xl font-bold'>
 					Adding more<br/>
 					By the<br/>
-					<strong className='text-green-500'>Day</strong>!
+					<strong className='text-green-600'>Day</strong>!
 				</h1>
 			</div>
 		</div>

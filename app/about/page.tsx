@@ -11,7 +11,7 @@ function About() {
 						<br />
 						Passionate
 						<br />
-						<strong className='text-green-500'> User</strong>!
+						<strong className='text-green-600'> User</strong>!
 					</h1>
 				</div>
 				<Image

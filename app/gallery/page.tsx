@@ -17,7 +17,7 @@ function Gallery() {
 						<br />
 						Look
 						<br />
-						<strong className='text-green-500'>Yourself</strong>!
+						<strong className='text-green-600'>Yourself</strong>!
 					</h1>
 				</div>
 				<Image
